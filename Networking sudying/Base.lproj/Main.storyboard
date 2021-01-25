@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Collection View Controller-->
+        <scene sceneID="DLN-bt-Hfk">
+            <objects>
+                <collectionViewController storyboardIdentifier="MainCollectionViewController" id="ME0-KY-wPQ" customClass="MainCollectionViewController" customModule="Networking_sudying" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Alq-vU-okS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="aRH-Se-W0d">
+                            <size key="itemSize" width="340" height="100"/>
+                            <size key="estimatedItemSize" width="340" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="zkH-zh-WE9" customClass="MainCollectionViewCell" customModule="Networking_sudying" customModuleProvider="target">
+                                <rect key="frame" x="37" y="40" width="340" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EBm-DW-T1b">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8j-Ac-Ur7">
+                                            <rect key="frame" x="140.5" y="35" width="59.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="t8j-Ac-Ur7" firstAttribute="centerX" secondItem="EBm-DW-T1b" secondAttribute="centerX" id="MHq-x8-CiN"/>
+                                        <constraint firstItem="t8j-Ac-Ur7" firstAttribute="centerY" secondItem="EBm-DW-T1b" secondAttribute="centerY" id="X7v-pY-YgN"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="label" destination="t8j-Ac-Ur7" id="shb-H2-cVF"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ME0-KY-wPQ" id="qrr-bd-dTu"/>
+                            <outlet property="delegate" destination="ME0-KY-wPQ" id="93u-2C-bRG"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAz-Vt-Smg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694.20289855072474" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Networking_sudying" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fFD-Wj-bgC">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tM-hi-fQm">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Show Image">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXW-MU-76V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-wq-yim">
+                                        <rect key="frame" x="0.0" y="199.5" width="374" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="GET request">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getRequestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ce8-4L-cP5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyf-9Z-byK">
+                                        <rect key="frame" x="0.0" y="399" width="374" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="POST request">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="postRequestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1f-cI-zne"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6h-VH-UCd">
+                                        <rect key="frame" x="0.0" y="598.5" width="374" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Show Courses">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showCoursesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVo-qY-2gG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m6h-VH-UCd" firstAttribute="width" secondItem="fFD-Wj-bgC" secondAttribute="width" id="mBR-iZ-Yc4"/>
+                                    <constraint firstItem="lzO-wq-yim" firstAttribute="width" secondItem="fFD-Wj-bgC" secondAttribute="width" id="mVs-Xu-k54"/>
+                                    <constraint firstItem="Fyf-9Z-byK" firstAttribute="width" secondItem="fFD-Wj-bgC" secondAttribute="width" id="te9-wt-yBh"/>
+                                    <constraint firstItem="8tM-hi-fQm" firstAttribute="width" secondItem="fFD-Wj-bgC" secondAttribute="width" id="wdk-Wu-YVl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fFD-Wj-bgC" secondAttribute="bottom" constant="20" id="Y3D-gD-ZoC"/>
+                            <constraint firstItem="fFD-Wj-bgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y6B-el-yLO"/>
+                            <constraint firstItem="fFD-Wj-bgC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="atk-5F-j7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFD-Wj-bgC" secondAttribute="trailing" constant="20" id="ww0-uG-S50"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="8tM-hi-fQm" id="fm6-dg-dRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="PTv-7c-tOc">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" id="LBi-ob-XKh" customClass="ImageViewController" customModule="Networking_sudying" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jrI-FV-1tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-TK-cp1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2B4-7n-0kJ">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2B4-7n-0kJ" firstAttribute="centerX" secondItem="eba-TD-JK1" secondAttribute="centerX" id="C0N-Gh-9VZ"/>
+                            <constraint firstAttribute="bottom" secondItem="R9e-TK-cp1" secondAttribute="bottom" id="hVr-Xd-VxX"/>
+                            <constraint firstItem="R9e-TK-cp1" firstAttribute="trailing" secondItem="eba-TD-JK1" secondAttribute="trailing" id="la3-PY-MoS"/>
+                            <constraint firstItem="R9e-TK-cp1" firstAttribute="top" secondItem="jrI-FV-1tm" secondAttribute="top" id="mY9-I2-cZy"/>
+                            <constraint firstItem="2B4-7n-0kJ" firstAttribute="centerY" secondItem="eba-TD-JK1" secondAttribute="centerY" id="s2U-lU-B1L"/>
+                            <constraint firstItem="R9e-TK-cp1" firstAttribute="leading" secondItem="eba-TD-JK1" secondAttribute="leading" id="yGb-zh-TFS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eba-TD-JK1"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="2B4-7n-0kJ" id="Rdf-u4-AtH"/>
+                        <outlet property="imageView" destination="R9e-TK-cp1" id="m0V-Kh-VL0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7M-CO-MqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.82608695652186" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

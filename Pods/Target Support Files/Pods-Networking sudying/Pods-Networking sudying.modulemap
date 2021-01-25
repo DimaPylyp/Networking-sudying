@@ -1,0 +1,6 @@
+framework module Pods_Networking_sudying {
+  umbrella header "Pods-Networking sudying-umbrella.h"
+
+  export *
+  module * { export * }
+}
