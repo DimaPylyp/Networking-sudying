@@ -17,7 +17,6 @@
 		32E3143D25BEE002001C8158 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3143C25BEE002001C8158 /* WebViewController.swift */; };
 		32EBD7C625BAF21900CE84B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EBD7C525BAF21900CE84B4 /* AppDelegate.swift */; };
 		32EBD7C825BAF21A00CE84B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EBD7C725BAF21A00CE84B4 /* SceneDelegate.swift */; };
-		32EBD7CA25BAF21A00CE84B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EBD7C925BAF21A00CE84B4 /* ViewController.swift */; };
 		32EBD7CD25BAF21A00CE84B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EBD7CB25BAF21A00CE84B4 /* Main.storyboard */; };
 		32EBD7CF25BAF21C00CE84B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32EBD7CE25BAF21C00CE84B4 /* Assets.xcassets */; };
 		32EBD7D225BAF21C00CE84B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EBD7D025BAF21C00CE84B4 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		32EBD7C225BAF21900CE84B4 /* Networking sudying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking sudying.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EBD7C525BAF21900CE84B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32EBD7C725BAF21A00CE84B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32EBD7C925BAF21A00CE84B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32EBD7CC25BAF21A00CE84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32EBD7CE25BAF21C00CE84B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32EBD7D125BAF21C00CE84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 		32DBA52F25BC8DFD00A2232F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				32EBD7C925BAF21A00CE84B4 /* ViewController.swift */,
 				32EBD7E325BB297400CE84B4 /* ImageViewController.swift */,
 				32DBA52D25BC8DD400A2232F /* CoursesViewController.swift */,
 				32E3143C25BEE002001C8158 /* WebViewController.swift */,
@@ -296,7 +293,6 @@
 				32CF7AE525BD945E0021F29E /* CourseModel.swift in Sources */,
 				328D37FA25BEF2C500ADE7B2 /* MainCollectionViewController.swift in Sources */,
 				32EBD7DA25BAF7C400CE84B4 /* NetworkManager.swift in Sources */,
-				32EBD7CA25BAF21A00CE84B4 /* ViewController.swift in Sources */,
 				32EBD7DF25BB246900CE84B4 /* CoordinatorProtocol.swift in Sources */,
 				32EBD7C625BAF21900CE84B4 /* AppDelegate.swift in Sources */,
 				32DBA52B25BC8C4600A2232F /* CoursesCoordinator.swift in Sources */,
