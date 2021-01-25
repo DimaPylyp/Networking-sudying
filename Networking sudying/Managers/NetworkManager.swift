@@ -6,7 +6,7 @@
 //  Copyright © 2021 DIMa. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     
@@ -83,6 +83,28 @@ class NetworkManager {
                 complition(courses)
             } catch let error {
                 print(error)
+            }
+        }.resume()
+    }
+    
+    func uploadImage(_ image: UIImage) {
+        guard let url = URL(string: "https://api.imgur.com/3/image") else { return }
+        let imageParameters = ImageParameters(image: image, for: "image")
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = ["Authorization": "Client-ID c96ff053e29c33f"]
+        request.httpBody = imageParameters?.data
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch  {
+                    print(error)
+                }
             }
         }.resume()
     }

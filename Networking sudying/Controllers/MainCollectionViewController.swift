@@ -25,32 +25,60 @@ class MainCollectionViewController: UICollectionViewController, Storyboarded {
     
     let actions = Actions.allCases
     
+    var image: UIImage? {
+        didSet{
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    func fetchImage() {
+        networkManager.fetchImage { data in
+            self.image = UIImage(data: data)
+            guard let image = self.image else { return }
+            DispatchQueue.main.async {
+                self.coordinator?.goToImageVC(with: image)
+            }
+        }
+    }
+    
     // MARK: UICollectionViewDataSource
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return actions.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MainCollectionViewCell
-        cell.label.text = actions[indexPath.row].rawValue
-    
+        
+        let action = actions[indexPath.row]
+        cell.label.text = action.rawValue
+        
+        if action == .uploadImage && image == nil{
+            cell.isUserInteractionEnabled = false
+            cell.contentView.backgroundColor = .blue
+        } else {
+            cell.contentView.backgroundColor = .lightGray
+            cell.isUserInteractionEnabled = true
+        }
+        print(indexPath.row)
         return cell
     }
-
+    
     // MARK: UICollectionViewDelegate
-
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let action = actions[indexPath.row]
         
         switch action {
         case .showImage:
-            coordinator?.goToImageVC()
+            fetchImage()
         case .get:
             networkManager.getRequest()
         case .post:
@@ -58,8 +86,10 @@ class MainCollectionViewController: UICollectionViewController, Storyboarded {
         case .showCourses:
             coordinator?.showCourses()
         case .uploadImage:
-            print("Upload Image")
+            guard let image = image else { return }
+            networkManager.uploadImage(image)
+            print("uploading")
         }
     }
-
+    
 }

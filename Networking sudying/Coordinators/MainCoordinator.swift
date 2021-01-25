@@ -33,8 +33,9 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         }
     }
     
-    func goToImageVC() {
+    func goToImageVC(with image: UIImage) {
         let vc = ImageViewController.instantiate()
+        vc.image = image
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

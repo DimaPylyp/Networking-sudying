@@ -11,14 +11,16 @@ import UIKit
 class ImageViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
+    var image: UIImage?
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     let networkManager = NetworkManager()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setActivityIndicator()
-        fetchImage()
+        setImageView()
     }
     
     func setActivityIndicator() {
@@ -26,12 +28,8 @@ class ImageViewController: UIViewController, Storyboarded {
         activityIndicator.startAnimating()
     }
     
-    func fetchImage() {
-        networkManager.fetchImage { data in
-            DispatchQueue.main.async {
-                self.imageView.image = UIImage(data: data)
-                self.activityIndicator.stopAnimating()
-            }
-        }
+    func setImageView() {
+        self.imageView.image = self.image
+        self.activityIndicator.stopAnimating()
     }
 }

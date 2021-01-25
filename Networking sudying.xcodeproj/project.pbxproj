@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3258847825BF2E0E0075B3DF /* ImageParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3258847725BF2E0E0075B3DF /* ImageParameters.swift */; };
 		328D37F825BEF28B00ADE7B2 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D37F725BEF28B00ADE7B2 /* MainCollectionViewCell.swift */; };
 		328D37FA25BEF2C500ADE7B2 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D37F925BEF2C500ADE7B2 /* MainCollectionViewController.swift */; };
 		32CF7AE525BD945E0021F29E /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF7AE425BD945E0021F29E /* CourseModel.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3258847725BF2E0E0075B3DF /* ImageParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageParameters.swift; sourceTree = "<group>"; };
 		328D37F725BEF28B00ADE7B2 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		328D37F925BEF2C500ADE7B2 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		32CF7AE425BD945E0021F29E /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				32CF7AE425BD945E0021F29E /* CourseModel.swift */,
 				32CF7AE725BD995D0021F29E /* WebsiteDescription.swift */,
+				3258847725BF2E0E0075B3DF /* ImageParameters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,10 +98,10 @@
 		32DBA52F25BC8DFD00A2232F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				328D37F925BEF2C500ADE7B2 /* MainCollectionViewController.swift */,
 				32EBD7E325BB297400CE84B4 /* ImageViewController.swift */,
 				32DBA52D25BC8DD400A2232F /* CoursesViewController.swift */,
 				32E3143C25BEE002001C8158 /* WebViewController.swift */,
-				328D37F925BEF2C500ADE7B2 /* MainCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				32EBD7C625BAF21900CE84B4 /* AppDelegate.swift in Sources */,
 				32DBA52B25BC8C4600A2232F /* CoursesCoordinator.swift in Sources */,
 				32CF7AE825BD995D0021F29E /* WebsiteDescription.swift in Sources */,
+				3258847825BF2E0E0075B3DF /* ImageParameters.swift in Sources */,
 				328D37F825BEF28B00ADE7B2 /* MainCollectionViewCell.swift in Sources */,
 				32EBD7DD25BB23DA00CE84B4 /* MainCoordinator.swift in Sources */,
 				32EBD7C825BAF21A00CE84B4 /* SceneDelegate.swift in Sources */,
