@@ -15,6 +15,7 @@
 		32CF7AEA25BDA0E70021F29E /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF7AE925BDA0E70021F29E /* CourseTableViewCell.swift */; };
 		32DBA52B25BC8C4600A2232F /* CoursesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DBA52A25BC8C4600A2232F /* CoursesCoordinator.swift */; };
 		32DBA52E25BC8DD400A2232F /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DBA52D25BC8DD400A2232F /* CoursesViewController.swift */; };
+		32DFD3CB25C01B8F007708FB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DFD3CA25C01B8F007708FB /* DataProvider.swift */; };
 		32E3143D25BEE002001C8158 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3143C25BEE002001C8158 /* WebViewController.swift */; };
 		32EBD7C625BAF21900CE84B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EBD7C525BAF21900CE84B4 /* AppDelegate.swift */; };
 		32EBD7C825BAF21A00CE84B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EBD7C725BAF21A00CE84B4 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		32CF7AE925BDA0E70021F29E /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		32DBA52A25BC8C4600A2232F /* CoursesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCoordinator.swift; sourceTree = "<group>"; };
 		32DBA52D25BC8DD400A2232F /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		32DFD3CA25C01B8F007708FB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		32E3143C25BEE002001C8158 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		32EBD7C225BAF21900CE84B4 /* Networking sudying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking sudying.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EBD7C525BAF21900CE84B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				32CF7AE425BD945E0021F29E /* CourseModel.swift */,
 				32CF7AE725BD995D0021F29E /* WebsiteDescription.swift */,
 				3258847725BF2E0E0075B3DF /* ImageParameters.swift */,
+				32DFD3CA25C01B8F007708FB /* DataProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				32EBD7C825BAF21A00CE84B4 /* SceneDelegate.swift in Sources */,
 				32EBD7E425BB297400CE84B4 /* ImageViewController.swift in Sources */,
 				32EBD7E225BB254A00CE84B4 /* StroyboardedProtocol.swift in Sources */,
+				32DFD3CB25C01B8F007708FB /* DataProvider.swift in Sources */,
 				32E3143D25BEE002001C8158 /* WebViewController.swift in Sources */,
 				32DBA52E25BC8DD400A2232F /* CoursesViewController.swift in Sources */,
 				32CF7AEA25BDA0E70021F29E /* CourseTableViewCell.swift in Sources */,
